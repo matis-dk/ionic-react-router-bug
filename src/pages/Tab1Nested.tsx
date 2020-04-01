@@ -1,5 +1,13 @@
 import React from "react";
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from "@ionic/react";
+import {
+  IonContent,
+  IonHeader,
+  IonPage,
+  IonTitle,
+  IonToolbar,
+  IonButtons,
+  IonBackButton
+} from "@ionic/react";
 import ExploreContainer from "../components/ExploreContainer";
 
 const Tab1Nested: React.FC = () => {
@@ -7,6 +15,9 @@ const Tab1Nested: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
+          <IonButtons slot="start">
+            <IonBackButton />
+          </IonButtons>
           <IonTitle>Tab 1 Nested</IonTitle>
         </IonToolbar>
       </IonHeader>
